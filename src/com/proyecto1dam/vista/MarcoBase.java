@@ -5,13 +5,8 @@
  */
 package com.proyecto1dam.vista;
 
-import com.proyecto1dam.controlador.CrudProfesor;
-import com.proyecto1dam.modelo.Profesor;
-//import com.proyecto1dam.vista.AlumnosBuscar;
 import java.awt.CardLayout;
 import java.awt.Color;
-import java.awt.Dimension;
-import java.util.List;
 import javax.swing.BorderFactory;
 
 /**
@@ -19,7 +14,7 @@ import javax.swing.BorderFactory;
  * @author andres
  */
 public class MarcoBase extends javax.swing.JFrame {
-    
+
     private CardLayout layCard;
 
     /**
@@ -29,24 +24,7 @@ public class MarcoBase extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         getRootPane().setBorder(BorderFactory.createMatteBorder(4, 4, 4, 4, Color.BLACK));
-        
-        //layCard = new CardLayout();
-        //menuPanel.setLayout(layCard);
-        //AlumnosBuscar alb = new AlumnosBuscar();
-        //ProfesoresBuscar pb = new ProfesoresBuscar();
-        //menuPanel.add("AlumnosBuscar", alb);
-        //menuPanel.add("ProfesoresBuscar", pb);
     }
-    /*
-    public void goAlumnos () {
-        layCard.show(menuPanel, "AlumnosBuscar");
-    }
-    
-    public void goProfesores () {
-        layCard.show(menuPanel, "ProfesoresBuscar");
-    }
-    
-    */
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -67,6 +45,7 @@ public class MarcoBase extends javax.swing.JFrame {
         identifLabel = new javax.swing.JLabel();
         usuarioLabel = new javax.swing.JLabel();
         logoutButton = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
         topMenuPanel = new javax.swing.JPanel();
         alumnosTopButton = new javax.swing.JButton();
         profesoresTopButton = new javax.swing.JButton();
@@ -74,7 +53,6 @@ public class MarcoBase extends javax.swing.JFrame {
         centrosTopButton = new javax.swing.JButton();
         administradoresTopButton = new javax.swing.JButton();
         ayudaTopButton = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
         menuPanel = new javax.swing.JPanel();
         menuLabel = new javax.swing.JLabel();
         botonesMenu = new javax.swing.JPanel();
@@ -85,11 +63,209 @@ public class MarcoBase extends javax.swing.JFrame {
         adminButtons = new javax.swing.JButton();
         ayudaButton = new javax.swing.JButton();
         fondoLabel = new javax.swing.JLabel();
+        alumnosBuscar = new javax.swing.JPanel();
+        alumnosLabel = new javax.swing.JLabel();
+        buscarPanel = new javax.swing.JPanel();
+        buscarLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
+        panelInferiorProfes = new javax.swing.JPanel();
+        botoneraProfesPanel = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        masOpcionesLabel = new javax.swing.JLabel();
+        profesoresBuscar = new javax.swing.JPanel();
+        profeLabel1 = new javax.swing.JLabel();
+        buscarPanel1 = new javax.swing.JPanel();
+        buscarLabel1 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jButton7 = new javax.swing.JButton();
+        jSeparator3 = new javax.swing.JSeparator();
+        panelInferiorProfes1 = new javax.swing.JPanel();
+        botoneraProfesPanel1 = new javax.swing.JPanel();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        masOpcionesLabel1 = new javax.swing.JLabel();
+        profesoresDetalle = new javax.swing.JPanel();
+        profeLabel5 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jTextField41 = new javax.swing.JTextField();
+        jTextField42 = new javax.swing.JTextField();
+        jTextField43 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox();
+        jTextField44 = new javax.swing.JTextField();
+        jTextField45 = new javax.swing.JTextField();
+        jTextField46 = new javax.swing.JTextField();
+        jTextField47 = new javax.swing.JTextField();
+        jTextField48 = new javax.swing.JTextField();
+        jTextField49 = new javax.swing.JTextField();
+        jTextField50 = new javax.swing.JTextField();
+        jTextField51 = new javax.swing.JTextField();
+        jTextField52 = new javax.swing.JTextField();
+        jTextField53 = new javax.swing.JTextField();
+        jTextField54 = new javax.swing.JTextField();
+        profesoresTabla = new javax.swing.JPanel();
+        menuLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        botoneraProfesPanel5 = new javax.swing.JPanel();
+        jButton33 = new javax.swing.JButton();
+        jButton34 = new javax.swing.JButton();
+        jButton35 = new javax.swing.JButton();
+        jButton36 = new javax.swing.JButton();
+        jButton37 = new javax.swing.JButton();
+        jButton38 = new javax.swing.JButton();
+        gruposBuscar = new javax.swing.JPanel();
+        profeLabel2 = new javax.swing.JLabel();
+        buscarPanel2 = new javax.swing.JPanel();
+        buscarLabel2 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
+        jTextField18 = new javax.swing.JTextField();
+        jTextField19 = new javax.swing.JTextField();
+        jTextField20 = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jTextField22 = new javax.swing.JTextField();
+        jTextField23 = new javax.swing.JTextField();
+        jTextField24 = new javax.swing.JTextField();
+        jButton13 = new javax.swing.JButton();
+        jSeparator4 = new javax.swing.JSeparator();
+        panelInferiorProfes2 = new javax.swing.JPanel();
+        botoneraProfesPanel2 = new javax.swing.JPanel();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        masOpcionesLabel2 = new javax.swing.JLabel();
+        centrosBuscar = new javax.swing.JPanel();
+        profeLabel3 = new javax.swing.JLabel();
+        buscarPanel3 = new javax.swing.JPanel();
+        buscarLabel3 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jTextField25 = new javax.swing.JTextField();
+        jTextField26 = new javax.swing.JTextField();
+        jTextField27 = new javax.swing.JTextField();
+        jTextField28 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField29 = new javax.swing.JTextField();
+        jTextField30 = new javax.swing.JTextField();
+        jTextField31 = new javax.swing.JTextField();
+        jTextField32 = new javax.swing.JTextField();
+        jButton19 = new javax.swing.JButton();
+        jSeparator5 = new javax.swing.JSeparator();
+        panelInferiorProfes3 = new javax.swing.JPanel();
+        botoneraProfesPanel3 = new javax.swing.JPanel();
+        jButton20 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        masOpcionesLabel3 = new javax.swing.JLabel();
+        administradoresBuscar = new javax.swing.JPanel();
+        profeLabel4 = new javax.swing.JLabel();
+        buscarPanel4 = new javax.swing.JPanel();
+        buscarLabel4 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jTextField33 = new javax.swing.JTextField();
+        jTextField34 = new javax.swing.JTextField();
+        jTextField35 = new javax.swing.JTextField();
+        jTextField36 = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jTextField37 = new javax.swing.JTextField();
+        jTextField38 = new javax.swing.JTextField();
+        jTextField39 = new javax.swing.JTextField();
+        jTextField40 = new javax.swing.JTextField();
+        jButton25 = new javax.swing.JButton();
+        jSeparator6 = new javax.swing.JSeparator();
+        panelInferiorProfes4 = new javax.swing.JPanel();
+        botoneraProfesPanel4 = new javax.swing.JPanel();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        masOpcionesLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
         setUndecorated(true);
         getContentPane().setLayout(null);
+
+        panelSuperior.setPreferredSize(new java.awt.Dimension(800, 100));
+        panelSuperior.setLayout(null);
 
         logoPanel.setLayout(null);
 
@@ -171,6 +347,14 @@ public class MarcoBase extends javax.swing.JFrame {
         logoPanel.add(identificarPanel);
         identificarPanel.setBounds(100, 60, 700, 40);
 
+        panelSuperior.add(logoPanel);
+        logoPanel.setBounds(0, 0, 800, 100);
+        panelSuperior.add(jSeparator1);
+        jSeparator1.setBounds(0, 100, 800, 6);
+
+        getContentPane().add(panelSuperior);
+        panelSuperior.setBounds(0, 0, 800, 100);
+
         topMenuPanel.setLayout(null);
 
         alumnosTopButton.setText("Alumnos");
@@ -227,37 +411,9 @@ public class MarcoBase extends javax.swing.JFrame {
         topMenuPanel.add(ayudaTopButton);
         ayudaTopButton.setBounds(666, 0, 130, 50);
 
-        javax.swing.GroupLayout panelSuperiorLayout = new javax.swing.GroupLayout(panelSuperior);
-        panelSuperior.setLayout(panelSuperiorLayout);
-        panelSuperiorLayout.setHorizontalGroup(
-            panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-            .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSuperiorLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(logoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(topMenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        panelSuperiorLayout.setVerticalGroup(
-            panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
-            .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSuperiorLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(logoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(topMenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
+        getContentPane().add(topMenuPanel);
+        topMenuPanel.setBounds(0, 100, 800, 50);
         topMenuPanel.setVisible(false);
-
-        getContentPane().add(panelSuperior);
-        panelSuperior.setBounds(0, 0, 800, 150);
 
         menuPanel.setLayout(null);
 
@@ -329,6 +485,886 @@ public class MarcoBase extends javax.swing.JFrame {
         getContentPane().add(menuPanel);
         menuPanel.setBounds(0, 150, 800, 450);
 
+        alumnosBuscar.setLayout(null);
+
+        alumnosLabel.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        alumnosLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        alumnosLabel.setText("ALUMNOS");
+        alumnosBuscar.add(alumnosLabel);
+        alumnosLabel.setBounds(0, 0, 800, 50);
+
+        buscarPanel.setLayout(null);
+
+        buscarLabel.setText("Buscar Profesor...");
+        buscarPanel.add(buscarLabel);
+        buscarLabel.setBounds(23, 12, 129, 17);
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Nombre");
+        buscarPanel.add(jLabel1);
+        jLabel1.setBounds(20, 50, 120, 20);
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("Apellido 1");
+        buscarPanel.add(jLabel2);
+        jLabel2.setBounds(20, 90, 120, 20);
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Apellido 2");
+        buscarPanel.add(jLabel3);
+        jLabel3.setBounds(20, 130, 120, 20);
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setText("DNI");
+        buscarPanel.add(jLabel4);
+        jLabel4.setBounds(20, 170, 120, 20);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        buscarPanel.add(jTextField1);
+        jTextField1.setBounds(162, 47, 150, 20);
+        buscarPanel.add(jTextField2);
+        jTextField2.setBounds(162, 87, 150, 27);
+        buscarPanel.add(jTextField3);
+        jTextField3.setBounds(162, 127, 150, 27);
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        buscarPanel.add(jTextField4);
+        jTextField4.setBounds(162, 167, 150, 27);
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel5.setText("Localidad");
+        buscarPanel.add(jLabel5);
+        jLabel5.setBounds(350, 50, 120, 20);
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel6.setText("Tel. Fijo");
+        buscarPanel.add(jLabel6);
+        jLabel6.setBounds(350, 90, 120, 20);
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("Tel. Móvil");
+        buscarPanel.add(jLabel7);
+        jLabel7.setBounds(350, 130, 120, 20);
+
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel8.setText("E-Mail");
+        buscarPanel.add(jLabel8);
+        jLabel8.setBounds(350, 170, 120, 20);
+        buscarPanel.add(jTextField5);
+        jTextField5.setBounds(494, 47, 150, 27);
+        buscarPanel.add(jTextField6);
+        jTextField6.setBounds(494, 87, 150, 27);
+        buscarPanel.add(jTextField7);
+        jTextField7.setBounds(494, 127, 150, 27);
+
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+        buscarPanel.add(jTextField8);
+        jTextField8.setBounds(494, 167, 150, 27);
+
+        jButton1.setText("Buscar!");
+        buscarPanel.add(jButton1);
+        jButton1.setBounds(710, 120, 70, 70);
+
+        alumnosBuscar.add(buscarPanel);
+        buscarPanel.setBounds(0, 50, 800, 200);
+        alumnosBuscar.add(jSeparator2);
+        jSeparator2.setBounds(0, 280, 800, 6);
+
+        panelInferiorProfes.setBackground(new Color(0,0,0,0));
+        panelInferiorProfes.setOpaque(false);
+        panelInferiorProfes.setLayout(null);
+
+        botoneraProfesPanel.setLayout(null);
+
+        jButton2.setText("<html><center>Añadir<br />Profesor</center></html>");
+        botoneraProfesPanel.add(jButton2);
+        jButton2.setBounds(0, 0, 90, 90);
+
+        jButton3.setText("<html><center>Mostrar<br />todos</center></html>");
+        botoneraProfesPanel.add(jButton3);
+        jButton3.setBounds(90, 0, 90, 90);
+
+        jButton4.setText("<html><center>Volver<br />al Menú</center></html>");
+        botoneraProfesPanel.add(jButton4);
+        jButton4.setBounds(180, 0, 90, 90);
+
+        jButton5.setText("Ayuda");
+        botoneraProfesPanel.add(jButton5);
+        jButton5.setBounds(270, 0, 90, 90);
+
+        jButton6.setText("Salir");
+        botoneraProfesPanel.add(jButton6);
+        jButton6.setBounds(510, 0, 90, 90);
+
+        panelInferiorProfes.add(botoneraProfesPanel);
+        botoneraProfesPanel.setBounds(100, 50, 600, 90);
+
+        masOpcionesLabel.setText("Más Opciones...");
+        panelInferiorProfes.add(masOpcionesLabel);
+        masOpcionesLabel.setBounds(23, 12, 114, 17);
+
+        alumnosBuscar.add(panelInferiorProfes);
+        panelInferiorProfes.setBounds(0, 290, 800, 160);
+
+        getContentPane().add(alumnosBuscar);
+        alumnosBuscar.setBounds(0, 0, 0, 0);
+        alumnosBuscar.setVisible(false);
+
+        profesoresBuscar.setLayout(null);
+
+        profeLabel1.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        profeLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        profeLabel1.setText("PROFESORES");
+        profesoresBuscar.add(profeLabel1);
+        profeLabel1.setBounds(0, 0, 800, 50);
+
+        buscarPanel1.setLayout(null);
+
+        buscarLabel1.setText("Buscar Profesor...");
+        buscarPanel1.add(buscarLabel1);
+        buscarLabel1.setBounds(23, 12, 129, 17);
+
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel9.setText("Nombre");
+        buscarPanel1.add(jLabel9);
+        jLabel9.setBounds(20, 50, 120, 20);
+
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("Apellido 1");
+        buscarPanel1.add(jLabel10);
+        jLabel10.setBounds(20, 90, 120, 20);
+
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel11.setText("Apellido 2");
+        buscarPanel1.add(jLabel11);
+        jLabel11.setBounds(20, 130, 120, 20);
+
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel12.setText("DNI");
+        buscarPanel1.add(jLabel12);
+        jLabel12.setBounds(20, 170, 120, 20);
+
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField9ActionPerformed(evt);
+            }
+        });
+        buscarPanel1.add(jTextField9);
+        jTextField9.setBounds(162, 47, 150, 20);
+        buscarPanel1.add(jTextField10);
+        jTextField10.setBounds(162, 87, 150, 27);
+        buscarPanel1.add(jTextField11);
+        jTextField11.setBounds(162, 127, 150, 27);
+
+        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField12ActionPerformed(evt);
+            }
+        });
+        buscarPanel1.add(jTextField12);
+        jTextField12.setBounds(162, 167, 150, 27);
+
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel13.setText("Localidad");
+        buscarPanel1.add(jLabel13);
+        jLabel13.setBounds(350, 50, 120, 20);
+
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel14.setText("Tel. Fijo");
+        buscarPanel1.add(jLabel14);
+        jLabel14.setBounds(350, 90, 120, 20);
+
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel15.setText("Tel. Móvil");
+        buscarPanel1.add(jLabel15);
+        jLabel15.setBounds(350, 130, 120, 20);
+
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel16.setText("E-Mail");
+        buscarPanel1.add(jLabel16);
+        jLabel16.setBounds(350, 170, 120, 20);
+        buscarPanel1.add(jTextField13);
+        jTextField13.setBounds(494, 47, 150, 27);
+        buscarPanel1.add(jTextField14);
+        jTextField14.setBounds(494, 87, 150, 27);
+        buscarPanel1.add(jTextField15);
+        jTextField15.setBounds(494, 127, 150, 27);
+
+        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField16ActionPerformed(evt);
+            }
+        });
+        buscarPanel1.add(jTextField16);
+        jTextField16.setBounds(494, 167, 150, 27);
+
+        jButton7.setText("Buscar!");
+        buscarPanel1.add(jButton7);
+        jButton7.setBounds(710, 120, 70, 70);
+
+        profesoresBuscar.add(buscarPanel1);
+        buscarPanel1.setBounds(0, 50, 800, 200);
+        profesoresBuscar.add(jSeparator3);
+        jSeparator3.setBounds(0, 280, 800, 6);
+
+        panelInferiorProfes1.setBackground(new Color(0,0,0,0));
+        panelInferiorProfes.setOpaque(false);
+        panelInferiorProfes1.setLayout(null);
+
+        botoneraProfesPanel1.setLayout(null);
+
+        jButton8.setText("<html><center>Añadir<br />Profesor</center></html>");
+        botoneraProfesPanel1.add(jButton8);
+        jButton8.setBounds(0, 0, 90, 90);
+
+        jButton9.setText("<html><center>Mostrar<br />todos</center></html>");
+        botoneraProfesPanel1.add(jButton9);
+        jButton9.setBounds(90, 0, 90, 90);
+
+        jButton10.setText("<html><center>Volver<br />al Menú</center></html>");
+        botoneraProfesPanel1.add(jButton10);
+        jButton10.setBounds(180, 0, 90, 90);
+
+        jButton11.setText("Ayuda");
+        botoneraProfesPanel1.add(jButton11);
+        jButton11.setBounds(270, 0, 90, 90);
+
+        jButton12.setText("Salir");
+        botoneraProfesPanel1.add(jButton12);
+        jButton12.setBounds(510, 0, 90, 90);
+
+        panelInferiorProfes1.add(botoneraProfesPanel1);
+        botoneraProfesPanel1.setBounds(100, 50, 600, 90);
+
+        masOpcionesLabel1.setText("Más Opciones...");
+        panelInferiorProfes1.add(masOpcionesLabel1);
+        masOpcionesLabel1.setBounds(23, 12, 114, 17);
+
+        profesoresBuscar.add(panelInferiorProfes1);
+        panelInferiorProfes1.setBounds(0, 290, 800, 160);
+
+        getContentPane().add(profesoresBuscar);
+        profesoresBuscar.setBounds(0, 0, 0, 0);
+        profesoresBuscar.setVisible(false);
+
+        profesoresDetalle.setLayout(null);
+
+        profeLabel5.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        profeLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        profeLabel5.setText("PROFESORES");
+        profesoresDetalle.add(profeLabel5);
+        profeLabel5.setBounds(300, 0, 200, 40);
+
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel41.setText("Nombre");
+        profesoresDetalle.add(jLabel41);
+        jLabel41.setBounds(50, 60, 120, 17);
+
+        jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel42.setText("Apellido 1");
+        profesoresDetalle.add(jLabel42);
+        jLabel42.setBounds(50, 100, 120, 17);
+
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel43.setText("Apellido 2");
+        profesoresDetalle.add(jLabel43);
+        jLabel43.setBounds(50, 140, 120, 17);
+
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel44.setText("Sexo");
+        profesoresDetalle.add(jLabel44);
+        jLabel44.setBounds(50, 180, 120, 17);
+
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel45.setText("Dirección");
+        profesoresDetalle.add(jLabel45);
+        jLabel45.setBounds(50, 220, 120, 17);
+
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel46.setText("Localidad");
+        profesoresDetalle.add(jLabel46);
+        jLabel46.setBounds(50, 260, 120, 17);
+
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel47.setText("Teléfono fijo");
+        profesoresDetalle.add(jLabel47);
+        jLabel47.setBounds(50, 300, 120, 17);
+
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel48.setText("Teléfono móvil");
+        profesoresDetalle.add(jLabel48);
+        jLabel48.setBounds(50, 340, 120, 17);
+
+        jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel49.setText("E-Mail");
+        profesoresDetalle.add(jLabel49);
+        jLabel49.setBounds(50, 380, 120, 17);
+
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel50.setText("Usuario");
+        profesoresDetalle.add(jLabel50);
+        jLabel50.setBounds(400, 60, 145, 17);
+
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel51.setText("Contraseña");
+        profesoresDetalle.add(jLabel51);
+        jLabel51.setBounds(400, 100, 145, 17);
+
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel52.setText("DNI");
+        profesoresDetalle.add(jLabel52);
+        jLabel52.setBounds(400, 140, 145, 17);
+
+        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel53.setText("Nº Seguridad Social");
+        profesoresDetalle.add(jLabel53);
+        jLabel53.setBounds(400, 180, 145, 17);
+
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel54.setText("CCC");
+        profesoresDetalle.add(jLabel54);
+        jLabel54.setBounds(400, 220, 145, 17);
+
+        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel55.setText("Material");
+        profesoresDetalle.add(jLabel55);
+        jLabel55.setBounds(400, 260, 145, 17);
+
+        jButton31.setText("Guardar Profesor");
+        profesoresDetalle.add(jButton31);
+        jButton31.setBounds(450, 310, 210, 29);
+
+        jButton32.setText("Volver atrás");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
+        profesoresDetalle.add(jButton32);
+        jButton32.setBounds(450, 360, 210, 29);
+        profesoresDetalle.add(jTextField41);
+        jTextField41.setBounds(180, 55, 150, 30);
+        profesoresDetalle.add(jTextField42);
+        jTextField42.setBounds(180, 95, 150, 30);
+        profesoresDetalle.add(jTextField43);
+        jTextField43.setBounds(180, 135, 150, 30);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Femenino" }));
+        profesoresDetalle.add(jComboBox1);
+        jComboBox1.setBounds(180, 175, 150, 30);
+        profesoresDetalle.add(jTextField44);
+        jTextField44.setBounds(180, 215, 150, 30);
+        profesoresDetalle.add(jTextField45);
+        jTextField45.setBounds(180, 255, 150, 30);
+        profesoresDetalle.add(jTextField46);
+        jTextField46.setBounds(180, 295, 150, 30);
+        profesoresDetalle.add(jTextField47);
+        jTextField47.setBounds(180, 335, 150, 30);
+        profesoresDetalle.add(jTextField48);
+        jTextField48.setBounds(180, 375, 150, 30);
+        profesoresDetalle.add(jTextField49);
+        jTextField49.setBounds(560, 55, 150, 30);
+        profesoresDetalle.add(jTextField50);
+        jTextField50.setBounds(560, 95, 150, 30);
+        profesoresDetalle.add(jTextField51);
+        jTextField51.setBounds(560, 135, 150, 30);
+
+        jTextField52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField52ActionPerformed(evt);
+            }
+        });
+        profesoresDetalle.add(jTextField52);
+        jTextField52.setBounds(560, 175, 150, 30);
+        profesoresDetalle.add(jTextField53);
+        jTextField53.setBounds(560, 215, 150, 30);
+        profesoresDetalle.add(jTextField54);
+        jTextField54.setBounds(560, 255, 150, 30);
+
+        getContentPane().add(profesoresDetalle);
+        profesoresDetalle.setBounds(0, 0, 0, 0);
+        profesoresDetalle.setVisible(false);
+
+        profesoresTabla.setLayout(null);
+
+        menuLabel1.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        menuLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        menuLabel1.setText("PROFESORES");
+        profesoresTabla.add(menuLabel1);
+        menuLabel1.setBounds(0, 0, 800, 50);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        profesoresTabla.add(jScrollPane1);
+        jScrollPane1.setBounds(20, 70, 760, 170);
+
+        botoneraProfesPanel5.setLayout(null);
+
+        jButton33.setText("<html><center>Ver<br />Detalles</center></html>");
+        botoneraProfesPanel5.add(jButton33);
+        jButton33.setBounds(0, 0, 90, 90);
+
+        jButton34.setText("<html><center>Modificar<br />Profesor</center></html>");
+        botoneraProfesPanel5.add(jButton34);
+        jButton34.setBounds(90, 0, 90, 90);
+
+        jButton35.setText("<html><center>Borrar<br />Profesor</center></html>");
+        botoneraProfesPanel5.add(jButton35);
+        jButton35.setBounds(180, 0, 90, 90);
+
+        jButton36.setText("Ayuda");
+        botoneraProfesPanel5.add(jButton36);
+        jButton36.setBounds(360, 0, 90, 90);
+
+        jButton37.setText("Salir");
+        botoneraProfesPanel5.add(jButton37);
+        jButton37.setBounds(510, 0, 90, 90);
+
+        jButton38.setText("<html><center>Volver<br />al Menú</center></html>");
+        botoneraProfesPanel5.add(jButton38);
+        jButton38.setBounds(270, 0, 90, 90);
+
+        profesoresTabla.add(botoneraProfesPanel5);
+        botoneraProfesPanel5.setBounds(100, 325, 600, 90);
+
+        getContentPane().add(profesoresTabla);
+        profesoresTabla.setBounds(0, 0, 0, 0);
+        profesoresTabla.setVisible(false);
+
+        gruposBuscar.setLayout(null);
+
+        profeLabel2.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        profeLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        profeLabel2.setText("GRUPOS");
+        gruposBuscar.add(profeLabel2);
+        profeLabel2.setBounds(0, 0, 800, 50);
+
+        buscarPanel2.setLayout(null);
+
+        buscarLabel2.setText("Buscar Profesor...");
+        buscarPanel2.add(buscarLabel2);
+        buscarLabel2.setBounds(23, 12, 129, 17);
+
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel17.setText("Nombre");
+        buscarPanel2.add(jLabel17);
+        jLabel17.setBounds(20, 50, 120, 20);
+
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel18.setText("Apellido 1");
+        buscarPanel2.add(jLabel18);
+        jLabel18.setBounds(20, 90, 120, 20);
+
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel19.setText("Apellido 2");
+        buscarPanel2.add(jLabel19);
+        jLabel19.setBounds(20, 130, 120, 20);
+
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel20.setText("DNI");
+        buscarPanel2.add(jLabel20);
+        jLabel20.setBounds(20, 170, 120, 20);
+
+        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField17ActionPerformed(evt);
+            }
+        });
+        buscarPanel2.add(jTextField17);
+        jTextField17.setBounds(162, 47, 150, 20);
+        buscarPanel2.add(jTextField18);
+        jTextField18.setBounds(162, 87, 150, 27);
+        buscarPanel2.add(jTextField19);
+        jTextField19.setBounds(162, 127, 150, 27);
+
+        jTextField20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField20ActionPerformed(evt);
+            }
+        });
+        buscarPanel2.add(jTextField20);
+        jTextField20.setBounds(162, 167, 150, 27);
+
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel21.setText("Localidad");
+        buscarPanel2.add(jLabel21);
+        jLabel21.setBounds(350, 50, 120, 20);
+
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel22.setText("Tel. Fijo");
+        buscarPanel2.add(jLabel22);
+        jLabel22.setBounds(350, 90, 120, 20);
+
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel23.setText("Tel. Móvil");
+        buscarPanel2.add(jLabel23);
+        jLabel23.setBounds(350, 130, 120, 20);
+
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel24.setText("E-Mail");
+        buscarPanel2.add(jLabel24);
+        jLabel24.setBounds(350, 170, 120, 20);
+        buscarPanel2.add(jTextField21);
+        jTextField21.setBounds(494, 47, 150, 27);
+        buscarPanel2.add(jTextField22);
+        jTextField22.setBounds(494, 87, 150, 27);
+        buscarPanel2.add(jTextField23);
+        jTextField23.setBounds(494, 127, 150, 27);
+
+        jTextField24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField24ActionPerformed(evt);
+            }
+        });
+        buscarPanel2.add(jTextField24);
+        jTextField24.setBounds(494, 167, 150, 27);
+
+        jButton13.setText("Buscar!");
+        buscarPanel2.add(jButton13);
+        jButton13.setBounds(710, 120, 70, 70);
+
+        gruposBuscar.add(buscarPanel2);
+        buscarPanel2.setBounds(0, 50, 800, 200);
+        gruposBuscar.add(jSeparator4);
+        jSeparator4.setBounds(0, 280, 800, 6);
+
+        panelInferiorProfes2.setBackground(new Color(0,0,0,0));
+        panelInferiorProfes.setOpaque(false);
+        panelInferiorProfes2.setLayout(null);
+
+        botoneraProfesPanel2.setLayout(null);
+
+        jButton14.setText("<html><center>Añadir<br />Profesor</center></html>");
+        botoneraProfesPanel2.add(jButton14);
+        jButton14.setBounds(0, 0, 90, 90);
+
+        jButton15.setText("<html><center>Mostrar<br />todos</center></html>");
+        botoneraProfesPanel2.add(jButton15);
+        jButton15.setBounds(90, 0, 90, 90);
+
+        jButton16.setText("<html><center>Volver<br />al Menú</center></html>");
+        botoneraProfesPanel2.add(jButton16);
+        jButton16.setBounds(180, 0, 90, 90);
+
+        jButton17.setText("Ayuda");
+        botoneraProfesPanel2.add(jButton17);
+        jButton17.setBounds(270, 0, 90, 90);
+
+        jButton18.setText("Salir");
+        botoneraProfesPanel2.add(jButton18);
+        jButton18.setBounds(510, 0, 90, 90);
+
+        panelInferiorProfes2.add(botoneraProfesPanel2);
+        botoneraProfesPanel2.setBounds(100, 50, 600, 90);
+
+        masOpcionesLabel2.setText("Más Opciones...");
+        panelInferiorProfes2.add(masOpcionesLabel2);
+        masOpcionesLabel2.setBounds(23, 12, 114, 17);
+
+        gruposBuscar.add(panelInferiorProfes2);
+        panelInferiorProfes2.setBounds(0, 290, 800, 160);
+
+        getContentPane().add(gruposBuscar);
+        gruposBuscar.setBounds(0, 0, 0, 0);
+        gruposBuscar.setVisible(false);
+
+        centrosBuscar.setLayout(null);
+
+        profeLabel3.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        profeLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        profeLabel3.setText("CENTROS");
+        centrosBuscar.add(profeLabel3);
+        profeLabel3.setBounds(0, 0, 800, 50);
+
+        buscarPanel3.setLayout(null);
+
+        buscarLabel3.setText("Buscar Profesor...");
+        buscarPanel3.add(buscarLabel3);
+        buscarLabel3.setBounds(23, 12, 129, 17);
+
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel25.setText("Nombre");
+        buscarPanel3.add(jLabel25);
+        jLabel25.setBounds(20, 50, 120, 20);
+
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel26.setText("Apellido 1");
+        buscarPanel3.add(jLabel26);
+        jLabel26.setBounds(20, 90, 120, 20);
+
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel27.setText("Apellido 2");
+        buscarPanel3.add(jLabel27);
+        jLabel27.setBounds(20, 130, 120, 20);
+
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel28.setText("DNI");
+        buscarPanel3.add(jLabel28);
+        jLabel28.setBounds(20, 170, 120, 20);
+
+        jTextField25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField25ActionPerformed(evt);
+            }
+        });
+        buscarPanel3.add(jTextField25);
+        jTextField25.setBounds(162, 47, 150, 20);
+        buscarPanel3.add(jTextField26);
+        jTextField26.setBounds(162, 87, 150, 27);
+        buscarPanel3.add(jTextField27);
+        jTextField27.setBounds(162, 127, 150, 27);
+
+        jTextField28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField28ActionPerformed(evt);
+            }
+        });
+        buscarPanel3.add(jTextField28);
+        jTextField28.setBounds(162, 167, 150, 27);
+
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel29.setText("Localidad");
+        buscarPanel3.add(jLabel29);
+        jLabel29.setBounds(350, 50, 120, 20);
+
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel30.setText("Tel. Fijo");
+        buscarPanel3.add(jLabel30);
+        jLabel30.setBounds(350, 90, 120, 20);
+
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel31.setText("Tel. Móvil");
+        buscarPanel3.add(jLabel31);
+        jLabel31.setBounds(350, 130, 120, 20);
+
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel32.setText("E-Mail");
+        buscarPanel3.add(jLabel32);
+        jLabel32.setBounds(350, 170, 120, 20);
+        buscarPanel3.add(jTextField29);
+        jTextField29.setBounds(494, 47, 150, 27);
+        buscarPanel3.add(jTextField30);
+        jTextField30.setBounds(494, 87, 150, 27);
+        buscarPanel3.add(jTextField31);
+        jTextField31.setBounds(494, 127, 150, 27);
+
+        jTextField32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField32ActionPerformed(evt);
+            }
+        });
+        buscarPanel3.add(jTextField32);
+        jTextField32.setBounds(494, 167, 150, 27);
+
+        jButton19.setText("Buscar!");
+        buscarPanel3.add(jButton19);
+        jButton19.setBounds(710, 120, 70, 70);
+
+        centrosBuscar.add(buscarPanel3);
+        buscarPanel3.setBounds(0, 50, 800, 200);
+        centrosBuscar.add(jSeparator5);
+        jSeparator5.setBounds(0, 280, 800, 6);
+
+        panelInferiorProfes3.setBackground(new Color(0,0,0,0));
+        panelInferiorProfes.setOpaque(false);
+        panelInferiorProfes3.setLayout(null);
+
+        botoneraProfesPanel3.setLayout(null);
+
+        jButton20.setText("<html><center>Añadir<br />Profesor</center></html>");
+        botoneraProfesPanel3.add(jButton20);
+        jButton20.setBounds(0, 0, 90, 90);
+
+        jButton21.setText("<html><center>Mostrar<br />todos</center></html>");
+        botoneraProfesPanel3.add(jButton21);
+        jButton21.setBounds(90, 0, 90, 90);
+
+        jButton22.setText("<html><center>Volver<br />al Menú</center></html>");
+        botoneraProfesPanel3.add(jButton22);
+        jButton22.setBounds(180, 0, 90, 90);
+
+        jButton23.setText("Ayuda");
+        botoneraProfesPanel3.add(jButton23);
+        jButton23.setBounds(270, 0, 90, 90);
+
+        jButton24.setText("Salir");
+        botoneraProfesPanel3.add(jButton24);
+        jButton24.setBounds(510, 0, 90, 90);
+
+        panelInferiorProfes3.add(botoneraProfesPanel3);
+        botoneraProfesPanel3.setBounds(100, 50, 600, 90);
+
+        masOpcionesLabel3.setText("Más Opciones...");
+        panelInferiorProfes3.add(masOpcionesLabel3);
+        masOpcionesLabel3.setBounds(23, 12, 114, 17);
+
+        centrosBuscar.add(panelInferiorProfes3);
+        panelInferiorProfes3.setBounds(0, 290, 800, 160);
+
+        getContentPane().add(centrosBuscar);
+        centrosBuscar.setBounds(0, 0, 0, 0);
+        centrosBuscar.setVisible(false);
+
+        administradoresBuscar.setLayout(null);
+
+        profeLabel4.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        profeLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        profeLabel4.setText("ADMINISTRADORES");
+        administradoresBuscar.add(profeLabel4);
+        profeLabel4.setBounds(0, 0, 800, 50);
+
+        buscarPanel4.setLayout(null);
+
+        buscarLabel4.setText("Buscar Profesor...");
+        buscarPanel4.add(buscarLabel4);
+        buscarLabel4.setBounds(23, 12, 129, 17);
+
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel33.setText("Nombre");
+        buscarPanel4.add(jLabel33);
+        jLabel33.setBounds(20, 50, 120, 20);
+
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel34.setText("Apellido 1");
+        buscarPanel4.add(jLabel34);
+        jLabel34.setBounds(20, 90, 120, 20);
+
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel35.setText("Apellido 2");
+        buscarPanel4.add(jLabel35);
+        jLabel35.setBounds(20, 130, 120, 20);
+
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel36.setText("DNI");
+        buscarPanel4.add(jLabel36);
+        jLabel36.setBounds(20, 170, 120, 20);
+
+        jTextField33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField33ActionPerformed(evt);
+            }
+        });
+        buscarPanel4.add(jTextField33);
+        jTextField33.setBounds(162, 47, 150, 20);
+        buscarPanel4.add(jTextField34);
+        jTextField34.setBounds(162, 87, 150, 27);
+        buscarPanel4.add(jTextField35);
+        jTextField35.setBounds(162, 127, 150, 27);
+
+        jTextField36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField36ActionPerformed(evt);
+            }
+        });
+        buscarPanel4.add(jTextField36);
+        jTextField36.setBounds(162, 167, 150, 27);
+
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel37.setText("Localidad");
+        buscarPanel4.add(jLabel37);
+        jLabel37.setBounds(350, 50, 120, 20);
+
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel38.setText("Tel. Fijo");
+        buscarPanel4.add(jLabel38);
+        jLabel38.setBounds(350, 90, 120, 20);
+
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel39.setText("Tel. Móvil");
+        buscarPanel4.add(jLabel39);
+        jLabel39.setBounds(350, 130, 120, 20);
+
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel40.setText("E-Mail");
+        buscarPanel4.add(jLabel40);
+        jLabel40.setBounds(350, 170, 120, 20);
+        buscarPanel4.add(jTextField37);
+        jTextField37.setBounds(494, 47, 150, 27);
+        buscarPanel4.add(jTextField38);
+        jTextField38.setBounds(494, 87, 150, 27);
+        buscarPanel4.add(jTextField39);
+        jTextField39.setBounds(494, 127, 150, 27);
+
+        jTextField40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField40ActionPerformed(evt);
+            }
+        });
+        buscarPanel4.add(jTextField40);
+        jTextField40.setBounds(494, 167, 150, 27);
+
+        jButton25.setText("Buscar!");
+        buscarPanel4.add(jButton25);
+        jButton25.setBounds(710, 120, 70, 70);
+
+        administradoresBuscar.add(buscarPanel4);
+        buscarPanel4.setBounds(0, 50, 800, 200);
+        administradoresBuscar.add(jSeparator6);
+        jSeparator6.setBounds(0, 280, 800, 6);
+
+        panelInferiorProfes4.setBackground(new Color(0,0,0,0));
+        panelInferiorProfes.setOpaque(false);
+        panelInferiorProfes4.setLayout(null);
+
+        botoneraProfesPanel4.setLayout(null);
+
+        jButton26.setText("<html><center>Añadir<br />Profesor</center></html>");
+        botoneraProfesPanel4.add(jButton26);
+        jButton26.setBounds(0, 0, 90, 90);
+
+        jButton27.setText("<html><center>Mostrar<br />todos</center></html>");
+        botoneraProfesPanel4.add(jButton27);
+        jButton27.setBounds(90, 0, 90, 90);
+
+        jButton28.setText("<html><center>Volver<br />al Menú</center></html>");
+        botoneraProfesPanel4.add(jButton28);
+        jButton28.setBounds(180, 0, 90, 90);
+
+        jButton29.setText("Ayuda");
+        botoneraProfesPanel4.add(jButton29);
+        jButton29.setBounds(270, 0, 90, 90);
+
+        jButton30.setText("Salir");
+        botoneraProfesPanel4.add(jButton30);
+        jButton30.setBounds(510, 0, 90, 90);
+
+        panelInferiorProfes4.add(botoneraProfesPanel4);
+        botoneraProfesPanel4.setBounds(100, 50, 600, 90);
+
+        masOpcionesLabel4.setText("Más Opciones...");
+        panelInferiorProfes4.add(masOpcionesLabel4);
+        masOpcionesLabel4.setBounds(23, 12, 114, 17);
+
+        administradoresBuscar.add(panelInferiorProfes4);
+        panelInferiorProfes4.setBounds(0, 290, 800, 160);
+
+        getContentPane().add(administradoresBuscar);
+        administradoresBuscar.setBounds(0, 0, 0, 0);
+        administradoresBuscar.setVisible(false);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -342,104 +1378,153 @@ public class MarcoBase extends javax.swing.JFrame {
 
     private void profesoresTopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profesoresTopButtonActionPerformed
         // TODO add your handling code here:
-        ProfesoresBuscar pb = new ProfesoresBuscar();
-        pb.setLayout(null);
-        this.add(pb);
-        pb.setBounds(0, 150, 800, 450);
-        pb.setPreferredSize(new Dimension(800,450));
-        pb.setVisible(true);
+
     }//GEN-LAST:event_profesoresTopButtonActionPerformed
 
     private void centrosTopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_centrosTopButtonActionPerformed
         // TODO add your handling code here:
-        CentrosBuscar cb = new CentrosBuscar();
-        cb.setLayout(null);
-        this.add(cb);
-        cb.setBounds(0, 150, 800, 450);
-        cb.setPreferredSize(new Dimension(800,450));
-        cb.setVisible(true);
+
     }//GEN-LAST:event_centrosTopButtonActionPerformed
 
     private void gruposTopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gruposTopButtonActionPerformed
         // TODO add your handling code here:
-        //profesoresPanel.setVisible(false);
-        //com.proyecto1dam.utilidades.Utiles.ocultarPaneles(this);
-        
-        GruposBuscar gf = new GruposBuscar();
-        gf.setLayout(null);
-        this.add(gf);
-        gf.setBounds(0, 150, 800, 450);
-        gf.setPreferredSize(new Dimension(800,450));
-        gf.setVisible(true);
-       
+
     }//GEN-LAST:event_gruposTopButtonActionPerformed
 
     private void alumnosTopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alumnosTopButtonActionPerformed
         // TODO add your handling code here:
-        AlumnosBuscar alb = new AlumnosBuscar();
-        alb.setLayout(null);
-        this.add(alb);
-        alb.setBounds(0, 150, 800, 450);
-        alb.setPreferredSize(new Dimension(800,450));
-        alb.setVisible(true);
+        getContentPane().removeAll();
+        getContentPane().add(panelSuperior);
+        getContentPane().add(alumnosBuscar);
+        getContentPane().add(topMenuPanel);
+        panelSuperior.setVisible(true);
+        topMenuPanel.setVisible(true);
+        alumnosBuscar.setVisible(true);
+        alumnosBuscar.setBounds(0, 150, 800, 450);
+        topMenuPanel.setBounds(0, 100, 800, 50);
+        panelSuperior.setBounds(0, 0, 800, 100);
+
     }//GEN-LAST:event_alumnosTopButtonActionPerformed
 
     private void administradoresTopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_administradoresTopButtonActionPerformed
         // TODO add your handling code here:
-        AdministradoresBuscar adb = new AdministradoresBuscar();
-        adb.setLayout(null);
-        this.add(adb);
-        adb.setBounds(0, 150, 800, 450);
-        adb.setPreferredSize(new Dimension(800,450));
-        adb.setVisible(true);
+
     }//GEN-LAST:event_administradoresTopButtonActionPerformed
 
     private void alumnosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alumnosButtonActionPerformed
         // TODO add your handling code here:
-        //this.setVisible(false);
-       //goAlumnos();
+        menuPanel.setVisible(false);
+        topMenuPanel.setVisible(true);
+        alumnosBuscar.setVisible(true);
+        alumnosBuscar.setBounds(0, 150, 800, 450);
+        topMenuPanel.setBounds(0, 100, 800, 50);
 
     }//GEN-LAST:event_alumnosButtonActionPerformed
 
     private void profesoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profesoresButtonActionPerformed
         // TODO add your handling code here:
-        ProfesoresBuscar pb = new ProfesoresBuscar();
-        pb.setLayout(null);
-        this.add(pb);
-        pb.setBounds(0, 150, 800, 450);
-        pb.setPreferredSize(new Dimension(800,450));
-        pb.setVisible(true);
+        menuPanel.setVisible(false);
+        topMenuPanel.setVisible(true);
+        profesoresBuscar.setVisible(true);
+        profesoresBuscar.setBounds(0, 150, 800, 450);
+        topMenuPanel.setBounds(0, 100, 800, 50);
     }//GEN-LAST:event_profesoresButtonActionPerformed
 
     private void gruposButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gruposButtonActionPerformed
         // TODO add your handling code here:
-        GruposBuscar gf = new GruposBuscar();
-        gf.setLayout(null);
-        this.add(gf);
-        gf.setBounds(0, 150, 800, 450);
-        gf.setPreferredSize(new Dimension(800,450));
-        gf.setVisible(true);
+        menuPanel.setVisible(false);
+        topMenuPanel.setVisible(true);              
+        gruposBuscar.setVisible(true);       
+        gruposBuscar.setBounds(0, 150, 800, 450);
+        topMenuPanel.setBounds(0, 100, 800, 50);
     }//GEN-LAST:event_gruposButtonActionPerformed
 
     private void centrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_centrosButtonActionPerformed
         // TODO add your handling code here:
-        CentrosBuscar cb = new CentrosBuscar();
-        cb.setLayout(null);
-        this.add(cb);
-        cb.setBounds(0, 150, 800, 450);
-        cb.setPreferredSize(new Dimension(800,450));
-        cb.setVisible(true);
+        menuPanel.setVisible(false);
+        topMenuPanel.setVisible(true);       
+        centrosBuscar.setVisible(true);      
+        centrosBuscar.setBounds(0, 150, 800, 450);
+        topMenuPanel.setBounds(0, 100, 800, 50);
     }//GEN-LAST:event_centrosButtonActionPerformed
 
     private void adminButtonsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminButtonsActionPerformed
         // TODO add your handling code here:
-        AdministradoresBuscar adb = new AdministradoresBuscar();
-        adb.setLayout(null);
-        this.add(adb);
-        adb.setBounds(0, 150, 800, 450);
-        adb.setPreferredSize(new Dimension(800,450));
-        adb.setVisible(true);
+        menuPanel.setVisible(false);
+        topMenuPanel.setVisible(true);       
+        administradoresBuscar.setVisible(true);      
+        administradoresBuscar.setBounds(0, 150, 800, 450);
+        topMenuPanel.setBounds(0, 100, 800, 50);
     }//GEN-LAST:event_adminButtonsActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
+    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField12ActionPerformed
+
+    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField17ActionPerformed
+
+    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField20ActionPerformed
+
+    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField24ActionPerformed
+
+    private void jTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField25ActionPerformed
+
+    private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField28ActionPerformed
+
+    private void jTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField32ActionPerformed
+
+    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField33ActionPerformed
+
+    private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField36ActionPerformed
+
+    private void jTextField40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField40ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jTextField52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField52ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -481,30 +1566,225 @@ public class MarcoBase extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton adminButtons;
+    private javax.swing.JPanel administradoresBuscar;
     private javax.swing.JButton administradoresTopButton;
+    private javax.swing.JPanel alumnosBuscar;
     private javax.swing.JButton alumnosButton;
+    private javax.swing.JLabel alumnosLabel;
     private javax.swing.JButton alumnosTopButton;
     private javax.swing.JButton ayudaButton;
     private javax.swing.JButton ayudaTopButton;
+    private javax.swing.JPanel botoneraProfesPanel;
+    private javax.swing.JPanel botoneraProfesPanel1;
+    private javax.swing.JPanel botoneraProfesPanel2;
+    private javax.swing.JPanel botoneraProfesPanel3;
+    private javax.swing.JPanel botoneraProfesPanel4;
+    private javax.swing.JPanel botoneraProfesPanel5;
     private javax.swing.JPanel botonesMenu;
+    private javax.swing.JLabel buscarLabel;
+    private javax.swing.JLabel buscarLabel1;
+    private javax.swing.JLabel buscarLabel2;
+    private javax.swing.JLabel buscarLabel3;
+    private javax.swing.JLabel buscarLabel4;
+    private javax.swing.JPanel buscarPanel;
+    private javax.swing.JPanel buscarPanel1;
+    private javax.swing.JPanel buscarPanel2;
+    private javax.swing.JPanel buscarPanel3;
+    private javax.swing.JPanel buscarPanel4;
+    private javax.swing.JPanel centrosBuscar;
     private javax.swing.JButton centrosButton;
     private javax.swing.JButton centrosTopButton;
     private javax.swing.JLabel fondoLabel;
+    private javax.swing.JPanel gruposBuscar;
     private javax.swing.JButton gruposButton;
     private javax.swing.JButton gruposTopButton;
     private javax.swing.JLabel identifLabel;
     private javax.swing.JPanel identificarPanel;
     private javax.swing.JLabel imgLabel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton37;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField28;
+    private javax.swing.JTextField jTextField29;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField30;
+    private javax.swing.JTextField jTextField31;
+    private javax.swing.JTextField jTextField32;
+    private javax.swing.JTextField jTextField33;
+    private javax.swing.JTextField jTextField34;
+    private javax.swing.JTextField jTextField35;
+    private javax.swing.JTextField jTextField36;
+    private javax.swing.JTextField jTextField37;
+    private javax.swing.JTextField jTextField38;
+    private javax.swing.JTextField jTextField39;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField40;
+    private javax.swing.JTextField jTextField41;
+    private javax.swing.JTextField jTextField42;
+    private javax.swing.JTextField jTextField43;
+    private javax.swing.JTextField jTextField44;
+    private javax.swing.JTextField jTextField45;
+    private javax.swing.JTextField jTextField46;
+    private javax.swing.JTextField jTextField47;
+    private javax.swing.JTextField jTextField48;
+    private javax.swing.JTextField jTextField49;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField50;
+    private javax.swing.JTextField jTextField51;
+    private javax.swing.JTextField jTextField52;
+    private javax.swing.JTextField jTextField53;
+    private javax.swing.JTextField jTextField54;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JPanel logoIMGPanel;
     private javax.swing.JPanel logoPanel;
     private javax.swing.JButton logoutButton;
+    private javax.swing.JLabel masOpcionesLabel;
+    private javax.swing.JLabel masOpcionesLabel1;
+    private javax.swing.JLabel masOpcionesLabel2;
+    private javax.swing.JLabel masOpcionesLabel3;
+    private javax.swing.JLabel masOpcionesLabel4;
     private javax.swing.JLabel menuLabel;
+    private javax.swing.JLabel menuLabel1;
     private javax.swing.JPanel menuPanel;
     private javax.swing.JLabel nombreESALabel;
     private javax.swing.JPanel nombrePanel;
+    private javax.swing.JPanel panelInferiorProfes;
+    private javax.swing.JPanel panelInferiorProfes1;
+    private javax.swing.JPanel panelInferiorProfes2;
+    private javax.swing.JPanel panelInferiorProfes3;
+    private javax.swing.JPanel panelInferiorProfes4;
     private javax.swing.JPanel panelSuperior;
+    private javax.swing.JLabel profeLabel1;
+    private javax.swing.JLabel profeLabel2;
+    private javax.swing.JLabel profeLabel3;
+    private javax.swing.JLabel profeLabel4;
+    private javax.swing.JLabel profeLabel5;
+    private javax.swing.JPanel profesoresBuscar;
     private javax.swing.JButton profesoresButton;
+    private javax.swing.JPanel profesoresDetalle;
+    private javax.swing.JPanel profesoresTabla;
     private javax.swing.JButton profesoresTopButton;
     private javax.swing.JPanel topMenuPanel;
     private javax.swing.JLabel usuarioLabel;

@@ -206,12 +206,6 @@ public class LoginForm extends javax.swing.JFrame {
     private void entrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarButtonActionPerformed
         MarcoBase mb = new MarcoBase();
         mb.setVisible(true);
-        MenuPrincipal mp = new MenuPrincipal();
-        mp.setLayout(null);
-        mb.add(mp);
-        mp.setBounds(0, 150, 800, 450);
-        mp.setPreferredSize(new Dimension(800,450));
-        mp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_entrarButtonActionPerformed
 
