@@ -33,7 +33,7 @@ public class VentanaInicio extends javax.swing.JFrame {
     
     public void iniciarVentana () {
         setLocationRelativeTo(null);
-        hilo = new Carga(getBarraSwingJPB(), 50);
+        hilo = new Carga(getBarraSwingJPB(), 2);
         hilo.start();
         hilo = null;
     }

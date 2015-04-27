@@ -11,12 +11,12 @@ import java.awt.Color;
  *
  * @author andres
  */
-public class ProfesoresForm extends javax.swing.JPanel {
+public class CentrosBuscar extends javax.swing.JPanel {
 
     /**
      * Creates new form ProfesoresForm
      */
-    public ProfesoresForm() {
+    public CentrosBuscar() {
         initComponents();
         
         panelInferiorProfes.setOpaque(false);
@@ -68,7 +68,7 @@ public class ProfesoresForm extends javax.swing.JPanel {
 
         profeLabel.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
         profeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        profeLabel.setText("PROFESORES");
+        profeLabel.setText("GRUPOS");
         add(profeLabel);
         profeLabel.setBounds(0, 0, 800, 50);
 
@@ -76,7 +76,7 @@ public class ProfesoresForm extends javax.swing.JPanel {
 
         buscarLabel.setText("Buscar Profesor...");
         buscarPanel.add(buscarLabel);
-        buscarLabel.setBounds(23, 12, 129, 17);
+        buscarLabel.setBounds(23, 12, 88, 14);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Nombre");
@@ -106,9 +106,9 @@ public class ProfesoresForm extends javax.swing.JPanel {
         buscarPanel.add(jTextField1);
         jTextField1.setBounds(162, 47, 150, 20);
         buscarPanel.add(jTextField2);
-        jTextField2.setBounds(162, 87, 150, 27);
+        jTextField2.setBounds(162, 87, 150, 20);
         buscarPanel.add(jTextField3);
-        jTextField3.setBounds(162, 127, 150, 27);
+        jTextField3.setBounds(162, 127, 150, 20);
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +116,7 @@ public class ProfesoresForm extends javax.swing.JPanel {
             }
         });
         buscarPanel.add(jTextField4);
-        jTextField4.setBounds(162, 167, 150, 27);
+        jTextField4.setBounds(162, 167, 150, 20);
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Localidad");
@@ -138,11 +138,11 @@ public class ProfesoresForm extends javax.swing.JPanel {
         buscarPanel.add(jLabel8);
         jLabel8.setBounds(350, 170, 120, 20);
         buscarPanel.add(jTextField5);
-        jTextField5.setBounds(494, 47, 150, 27);
+        jTextField5.setBounds(494, 47, 150, 20);
         buscarPanel.add(jTextField6);
-        jTextField6.setBounds(494, 87, 150, 27);
+        jTextField6.setBounds(494, 87, 150, 20);
         buscarPanel.add(jTextField7);
-        jTextField7.setBounds(494, 127, 150, 27);
+        jTextField7.setBounds(494, 127, 150, 20);
 
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,7 +150,7 @@ public class ProfesoresForm extends javax.swing.JPanel {
             }
         });
         buscarPanel.add(jTextField8);
-        jTextField8.setBounds(494, 167, 150, 27);
+        jTextField8.setBounds(494, 167, 150, 20);
 
         jButton1.setText("Buscar!");
         buscarPanel.add(jButton1);
@@ -159,7 +159,7 @@ public class ProfesoresForm extends javax.swing.JPanel {
         add(buscarPanel);
         buscarPanel.setBounds(0, 50, 800, 200);
         add(jSeparator1);
-        jSeparator1.setBounds(0, 280, 800, 6);
+        jSeparator1.setBounds(0, 280, 800, 2);
 
         panelInferiorProfes.setBackground(new Color(0,0,0,0));
         panelInferiorProfes.setOpaque(false);
@@ -192,7 +192,7 @@ public class ProfesoresForm extends javax.swing.JPanel {
 
         masOpcionesLabel.setText("Más Opciones...");
         panelInferiorProfes.add(masOpcionesLabel);
-        masOpcionesLabel.setBounds(23, 12, 114, 17);
+        masOpcionesLabel.setBounds(23, 12, 78, 14);
 
         add(panelInferiorProfes);
         panelInferiorProfes.setBounds(0, 290, 800, 160);

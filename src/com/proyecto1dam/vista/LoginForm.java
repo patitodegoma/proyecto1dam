@@ -9,6 +9,7 @@ import com.proyecto1dam.inicio.*;
 import com.sun.awt.AWTUtilities;
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Toolkit;
@@ -77,8 +78,8 @@ public class LoginForm extends javax.swing.JFrame {
         nomUserField = new javax.swing.JTextField();
         contrasField = new javax.swing.JPasswordField();
         salirButton = new javax.swing.JButton();
-        barraCarga = new javax.swing.JProgressBar();
         bgLabel = new javax.swing.JLabel();
+        barraCarga = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
@@ -166,6 +167,12 @@ public class LoginForm extends javax.swing.JFrame {
         globalPanel.add(salirButton);
         salirButton.setBounds(330, 220, 90, 23);
 
+        bgLabel.setBackground(new java.awt.Color(255, 204, 204));
+        bgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/background_home.jpg"))); // NOI18N
+        bgLabel.setText("jLabel1");
+        globalPanel.add(bgLabel);
+        bgLabel.setBounds(0, 0, 838, 600);
+
         barraCarga.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 barraCargaStateChanged(evt);
@@ -174,12 +181,6 @@ public class LoginForm extends javax.swing.JFrame {
         globalPanel.add(barraCarga);
         barraCarga.setBounds(30, 360, 30, 14);
         setVisible(false);
-
-        bgLabel.setBackground(new java.awt.Color(255, 204, 204));
-        bgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/background_home.jpg"))); // NOI18N
-        bgLabel.setText("jLabel1");
-        globalPanel.add(bgLabel);
-        bgLabel.setBounds(0, 0, 838, 600);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -203,7 +204,13 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_salirButtonActionPerformed
 
     private void entrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarButtonActionPerformed
-        ESAPrincipal mp = new ESAPrincipal();
+        MarcoBase mb = new MarcoBase();
+        mb.setVisible(true);
+        MenuPrincipal mp = new MenuPrincipal();
+        mp.setLayout(null);
+        mb.add(mp);
+        mp.setBounds(0, 150, 800, 450);
+        mp.setPreferredSize(new Dimension(800,450));
         mp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_entrarButtonActionPerformed
