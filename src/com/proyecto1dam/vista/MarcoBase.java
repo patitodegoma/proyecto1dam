@@ -7,6 +7,8 @@ package com.proyecto1dam.vista;
 
 import com.proyecto1dam.controlador.CrudProfesor;
 import com.proyecto1dam.modelo.Profesor;
+//import com.proyecto1dam.vista.AlumnosBuscar;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.List;
@@ -17,6 +19,8 @@ import javax.swing.BorderFactory;
  * @author andres
  */
 public class MarcoBase extends javax.swing.JFrame {
+    
+    private CardLayout layCard;
 
     /**
      * Creates new form ESAPrincipal
@@ -25,7 +29,24 @@ public class MarcoBase extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         getRootPane().setBorder(BorderFactory.createMatteBorder(4, 4, 4, 4, Color.BLACK));
+        
+        //layCard = new CardLayout();
+        //menuPanel.setLayout(layCard);
+        //AlumnosBuscar alb = new AlumnosBuscar();
+        //ProfesoresBuscar pb = new ProfesoresBuscar();
+        //menuPanel.add("AlumnosBuscar", alb);
+        //menuPanel.add("ProfesoresBuscar", pb);
     }
+    /*
+    public void goAlumnos () {
+        layCard.show(menuPanel, "AlumnosBuscar");
+    }
+    
+    public void goProfesores () {
+        layCard.show(menuPanel, "ProfesoresBuscar");
+    }
+    
+    */
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,6 +57,7 @@ public class MarcoBase extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        panelSuperior = new javax.swing.JPanel();
         logoPanel = new javax.swing.JPanel();
         logoIMGPanel = new javax.swing.JPanel();
         imgLabel = new javax.swing.JLabel();
@@ -53,6 +75,16 @@ public class MarcoBase extends javax.swing.JFrame {
         administradoresTopButton = new javax.swing.JButton();
         ayudaTopButton = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
+        menuPanel = new javax.swing.JPanel();
+        menuLabel = new javax.swing.JLabel();
+        botonesMenu = new javax.swing.JPanel();
+        alumnosButton = new javax.swing.JButton();
+        profesoresButton = new javax.swing.JButton();
+        gruposButton = new javax.swing.JButton();
+        centrosButton = new javax.swing.JButton();
+        adminButtons = new javax.swing.JButton();
+        ayudaButton = new javax.swing.JButton();
+        fondoLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
@@ -139,9 +171,6 @@ public class MarcoBase extends javax.swing.JFrame {
         logoPanel.add(identificarPanel);
         identificarPanel.setBounds(100, 60, 700, 40);
 
-        getContentPane().add(logoPanel);
-        logoPanel.setBounds(0, 0, 800, 100);
-
         topMenuPanel.setLayout(null);
 
         alumnosTopButton.setText("Alumnos");
@@ -198,11 +227,107 @@ public class MarcoBase extends javax.swing.JFrame {
         topMenuPanel.add(ayudaTopButton);
         ayudaTopButton.setBounds(666, 0, 130, 50);
 
-        getContentPane().add(topMenuPanel);
-        topMenuPanel.setBounds(0, 100, 800, 50);
+        javax.swing.GroupLayout panelSuperiorLayout = new javax.swing.GroupLayout(panelSuperior);
+        panelSuperior.setLayout(panelSuperiorLayout);
+        panelSuperiorLayout.setHorizontalGroup(
+            panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelSuperiorLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(logoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(topMenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        panelSuperiorLayout.setVerticalGroup(
+            panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 150, Short.MAX_VALUE)
+            .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelSuperiorLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(logoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(topMenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
         topMenuPanel.setVisible(false);
-        getContentPane().add(jSeparator1);
-        jSeparator1.setBounds(0, 100, 800, 2);
+
+        getContentPane().add(panelSuperior);
+        panelSuperior.setBounds(0, 0, 800, 150);
+
+        menuPanel.setLayout(null);
+
+        menuLabel.setFont(new java.awt.Font("Ubuntu Light", 3, 24)); // NOI18N
+        menuLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        menuLabel.setText("MENÚ PRINCIPAL");
+        menuPanel.add(menuLabel);
+        menuLabel.setBounds(0, 0, 800, 50);
+
+        botonesMenu.setPreferredSize(new java.awt.Dimension(300, 200));
+        botonesMenu.setLayout(null);
+
+        alumnosButton.setText("Alumnos");
+        alumnosButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alumnosButtonActionPerformed(evt);
+            }
+        });
+        botonesMenu.add(alumnosButton);
+        alumnosButton.setBounds(0, 0, 160, 160);
+
+        profesoresButton.setText("Profesores");
+        profesoresButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                profesoresButtonActionPerformed(evt);
+            }
+        });
+        botonesMenu.add(profesoresButton);
+        profesoresButton.setBounds(160, 0, 160, 160);
+
+        gruposButton.setText("Grupos");
+        gruposButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gruposButtonActionPerformed(evt);
+            }
+        });
+        botonesMenu.add(gruposButton);
+        gruposButton.setBounds(320, 0, 160, 160);
+
+        centrosButton.setText("Centros");
+        centrosButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                centrosButtonActionPerformed(evt);
+            }
+        });
+        botonesMenu.add(centrosButton);
+        centrosButton.setBounds(0, 160, 160, 160);
+
+        adminButtons.setText("Administradores");
+        adminButtons.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminButtonsActionPerformed(evt);
+            }
+        });
+        botonesMenu.add(adminButtons);
+        adminButtons.setBounds(160, 160, 160, 160);
+
+        ayudaButton.setText("Acerca de...");
+        botonesMenu.add(ayudaButton);
+        ayudaButton.setBounds(320, 160, 160, 160);
+
+        menuPanel.add(botonesMenu);
+        botonesMenu.setBounds(160, 50, 480, 320);
+
+        fondoLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/background_homeb.png"))); // NOI18N
+        menuPanel.add(fondoLabel);
+        fondoLabel.setBounds(0, 0, 800, 450);
+
+        getContentPane().add(menuPanel);
+        menuPanel.setBounds(0, 150, 800, 450);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -269,6 +394,53 @@ public class MarcoBase extends javax.swing.JFrame {
         adb.setVisible(true);
     }//GEN-LAST:event_administradoresTopButtonActionPerformed
 
+    private void alumnosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alumnosButtonActionPerformed
+        // TODO add your handling code here:
+        //this.setVisible(false);
+       //goAlumnos();
+
+    }//GEN-LAST:event_alumnosButtonActionPerformed
+
+    private void profesoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profesoresButtonActionPerformed
+        // TODO add your handling code here:
+        ProfesoresBuscar pb = new ProfesoresBuscar();
+        pb.setLayout(null);
+        this.add(pb);
+        pb.setBounds(0, 150, 800, 450);
+        pb.setPreferredSize(new Dimension(800,450));
+        pb.setVisible(true);
+    }//GEN-LAST:event_profesoresButtonActionPerformed
+
+    private void gruposButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gruposButtonActionPerformed
+        // TODO add your handling code here:
+        GruposBuscar gf = new GruposBuscar();
+        gf.setLayout(null);
+        this.add(gf);
+        gf.setBounds(0, 150, 800, 450);
+        gf.setPreferredSize(new Dimension(800,450));
+        gf.setVisible(true);
+    }//GEN-LAST:event_gruposButtonActionPerformed
+
+    private void centrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_centrosButtonActionPerformed
+        // TODO add your handling code here:
+        CentrosBuscar cb = new CentrosBuscar();
+        cb.setLayout(null);
+        this.add(cb);
+        cb.setBounds(0, 150, 800, 450);
+        cb.setPreferredSize(new Dimension(800,450));
+        cb.setVisible(true);
+    }//GEN-LAST:event_centrosButtonActionPerformed
+
+    private void adminButtonsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminButtonsActionPerformed
+        // TODO add your handling code here:
+        AdministradoresBuscar adb = new AdministradoresBuscar();
+        adb.setLayout(null);
+        this.add(adb);
+        adb.setBounds(0, 150, 800, 450);
+        adb.setPreferredSize(new Dimension(800,450));
+        adb.setVisible(true);
+    }//GEN-LAST:event_adminButtonsActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -308,10 +480,17 @@ public class MarcoBase extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton adminButtons;
     private javax.swing.JButton administradoresTopButton;
+    private javax.swing.JButton alumnosButton;
     private javax.swing.JButton alumnosTopButton;
+    private javax.swing.JButton ayudaButton;
     private javax.swing.JButton ayudaTopButton;
+    private javax.swing.JPanel botonesMenu;
+    private javax.swing.JButton centrosButton;
     private javax.swing.JButton centrosTopButton;
+    private javax.swing.JLabel fondoLabel;
+    private javax.swing.JButton gruposButton;
     private javax.swing.JButton gruposTopButton;
     private javax.swing.JLabel identifLabel;
     private javax.swing.JPanel identificarPanel;
@@ -320,8 +499,12 @@ public class MarcoBase extends javax.swing.JFrame {
     private javax.swing.JPanel logoIMGPanel;
     private javax.swing.JPanel logoPanel;
     private javax.swing.JButton logoutButton;
+    private javax.swing.JLabel menuLabel;
+    private javax.swing.JPanel menuPanel;
     private javax.swing.JLabel nombreESALabel;
     private javax.swing.JPanel nombrePanel;
+    private javax.swing.JPanel panelSuperior;
+    private javax.swing.JButton profesoresButton;
     private javax.swing.JButton profesoresTopButton;
     private javax.swing.JPanel topMenuPanel;
     private javax.swing.JLabel usuarioLabel;
