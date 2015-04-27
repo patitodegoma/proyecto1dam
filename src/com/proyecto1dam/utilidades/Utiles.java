@@ -10,11 +10,14 @@ import java.awt.Container;
 import javax.swing.JPanel;
 
 /**
- *
+ * 
  * @author amacias
  */
 public class Utiles {
-    
+    /**
+     * @deprecated Se logra el objetivo con getContentPane().removeAll;
+     * @param padre 
+     */
     public static void ocultarPaneles(Container padre) {
         Component[] components = padre.getComponents();
 
